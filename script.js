@@ -2,7 +2,7 @@
 function game() {
     let computerScore = 0
     let playerScore = 0
-    for (let i = 0; i < 5; i++) {
+    for (let i = 0; playerScore < 3 && computerScore < 3;) {
         // Set computerSelection
     const computerSelection = getComputerChoice();
     // Set playerSelection
@@ -17,6 +17,9 @@ function game() {
         console.log('Player score: '+playerScore)
         console.log('Computer score: '+computerScore)
     }
+    playerScore>computerScore ? 
+    console.log("You win the game!") :
+    console.log("You lost the game")
 }
 
 // Create function getComputerChoice that will randomly return either 'Rock', 'Paper' or 'Scissors'

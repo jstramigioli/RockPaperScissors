@@ -76,3 +76,5 @@ function playRound(playerSelection, computerSelection, playerScore, computerScor
 }
 
 game()
+
+nextRound()
